@@ -1,17 +1,15 @@
-# Build with AI: Creating AI Agents with GPT‑5
-This repository contains the Python code examples from the LinkedIn Learning course **Build with AI: Creating AI Agents with GPT‑5**.
+# Build with AI: Creating AI Agents with GPT-5
+This repository contains the Python code examples from the LinkedIn Learning course **Build with AI: Creating AI Agents with GPT-5**.
 
-![Build with AI: Creating AI Agents with GPT-5](https://github.com/keshawillz/build-with-ai-creating-ai-agents-with-gpt-5/blob/main/course_image2.png)
-
-You’ll learn how to:
+You will learn how to:
 - Build agents that can call tools and take action
-- Steer GPT-5 output using verbosity and reasoning settings
+- Steer output using verbosity and reasoning settings
 - Extend agents with custom tools for more capabilities
 
 ## Requirements
 - Python 3.9+
-- An [OpenAI API key](https://platform.openai.com/account/api-keys)
-- A [Weather API key](https://www.weatherapi.com/my/)
+- A Gemini API key
+- A Weather API key (optional but recommended)
 
 ## Setup
 
@@ -26,21 +24,28 @@ You’ll learn how to:
     ```bash
     pip install -r requirements.txt
     ```
-4. **Set your OpenAI API key or place in .env file**:
+4. **Set your Gemini API key or place in .env file**:
     ```bash
-    export OPENAI_API_KEY="your_api_key"      # macOS/Linux
-    setx OPENAI_API_KEY "your_api_key"        # Windows PowerShell
+    export GEMINI_API_KEY="your_api_key"      # macOS/Linux
+    setx GEMINI_API_KEY "your_api_key"        # Windows PowerShell
     ```
-5. **Set your Weather API key or place in .env file**:
+5. **Optional: set your Weather API key**:
     ```bash
-    export WEATHER_API_KEY="your_api_key"      # macOS/Linux
-    setx OPENAI_API_KEY "your_api_key"        # Windows PowerShell
+    export WEATHER_API_KEY="your_api_key"     # macOS/Linux
+    setx WEATHER_API_KEY "your_api_key"       # Windows PowerShell
     ```
 
 ## Running the Examples
 
-Run the main demo script to see all lessons in action:
+Run any lesson script directly. For example:
 
 ```bash
-python agent.py
+python Lesson_2/agent.py
+```
 
+To run the FastAPI app used in Lesson 5:
+
+```bash
+cd Lesson_5
+uvicorn agent:app --reload
+```
