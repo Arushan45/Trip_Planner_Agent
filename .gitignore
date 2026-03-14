@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+
+# Env files
+.env
+.env.*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
