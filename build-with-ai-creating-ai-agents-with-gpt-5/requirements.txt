@@ -1,6 +1,5 @@
-openai==1.99.6
 python-dotenv
-openai-agents
 fastapi
 requests
 uvicorn
+google-genai
